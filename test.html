@@ -1,0 +1,51 @@
+<?php
+$title = get_sub_field('title');
+$subtitle = get_sub_field('subtitle');
+$blck_news = get_sub_field('blck_news');
+$bg = get_sub_field('bg');
+$bg = ($bg)?'style="background:url('.$bg['sizes']['large'].') no-repeat center"' : '';
+?>
+<section class="home-block-one">
+        <div class="home-slider">
+                <?php if ($blck_news) { ?>
+                <div class="col-12 news-slider-list" <?=$bg;?>>
+                    <div class="swiper-container news-swiper-container">
+                        <div class="swiper-wrapper">
+                            <?php foreach ($blck_news as $item) { ?>
+                            <div class="news-slider-items swiper-slide">
+                                <div class="row d-flex align-items-center home-slider-block">
+                                    <div class="col-12 col-md-7 home-slider-img">
+                                        <img src="<?=$item['icon']['sizes']['large'];?>" alt="<?=$item['icon']['alt'];?>">
+                                    </div>
+                                    <div class="col-12 col-md-5">
+                                        <div class="type">
+                                            мероприятие
+                                        </div>
+                                        <div class="title">
+                                            <?=$item['title']?>
+                                        </div>
+                                        <div class="desc">
+                                            <?=$item['desc']?>
+                                        </div>
+                                        <div class="date">
+                                            20 И 21 АПРЕЛЯ
+                                        </div>
+                                        <div class="more">
+                                            <a href="<?=$item['link']; ?>" class="btn red-btn">Подробнее</a>
+                                        </div>
+                                        <div class="all-news">
+                                            <div class="swiper-pagination news-swiper-pagination"></div>
+                                            <a href="/news/">Все новости</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <?};?>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <?php };?>
+	</div>
+</section>

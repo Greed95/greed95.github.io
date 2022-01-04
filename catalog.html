@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Fonts google Montserrat, Montserrat Alternates and Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!--MAIN CSS-->
+    <link rel="stylesheet" href="/main.css">
+    <!--Mobile Menu CSS-->
+    <link rel="stylesheet" href="/menu-mobile.css">
+    <!--font-awesome CSS-->
+    <link rel="stylesheet" href="r-plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <title>Каталог - Радуга Бисера</title>
+  </head>
+  <body>
+
+
+    <header>
+        <div class="header">
+            <div class="logo"><img src="/images/logo.svg" alt="Логотип Радуга Бисера"></div>
+            <div class="socal social-head">
+                <ul>
+                    <li><a href="#"><img src="/images/vk.svg" alt="vk"></a></li>
+                    <li><a href="#"><img src="/images/fb.svg" alt="fb"></a></li>
+                    <li><a href="#"><img src="/images/instagram.svg" alt="instagram"></a></li>
+                </ul>
+            </div>
+            <div class="search-head">поиск по сайту</div>
+            <div class="profile-head"><img src="/images/user.svg" alt="Мой Аккаунт"></div>
+            <div class="cart-head"><img src="/images/cart.svg" alt="Корзина"></div>
+            <div class="opt-head"><button>Оптовикам</button></div>
+            <div class="language">RU</div>
+        </div>
+    </header>
+    <div class="content menu">
+        <nav>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Вышивка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Бисероплетение</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Новинки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Хиты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Скидки и доставка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Задайте вопрос</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Новости из соцсетей</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+    </div>
+
+    <!-- Мобильное меню -->
+    <div class="burger-menu">
+        <a href="" class="burger-menu_button">
+          <spun class="burger-menu_lines"></spun>
+        </a>
+        <nav class="burger-menu_nav">
+          <a href="#section-1" class="burger-menu_link">Вышивка</a>
+          <a href="#section-2" class="burger-menu_link">Бисероплетение</a>
+          <a href="#section-3" class="burger-menu_link">Новинки</a>
+          <a href="#section-4" class="burger-menu_link">Хиты</a>
+          <a href="#section-5" class="burger-menu_link">Скидки и доставка</a>
+          <a href="#section-3" class="burger-menu_link">Задайте вопрос</a>
+          <a href="#section-4" class="burger-menu_link">Новости из соцсетей</a>
+          <a href="#section-5" class="burger-menu_link">Контакты</a>
+        </nav>
+        <div class="burger-menu_overlay"></div>
+    </div>
+    <!----------------------->
+
+    <section class="product-page bg-one">
+
+        <h2>Каталог</h2>
+        <div class="product-page-container container">
+
+            <button class="filter-mobile">Фильтр</button>
+            <div class="menu-filter ">
+            <button class="close-filter">X</button>
+            <div class="sidebar filter">
+                <div class="serach-block">
+                    <span class="serach-title">Поиск</span>
+                    <input type="search" name="q" placeholder="ключевое слово">
+                    <span class="serach-title">Цена</span>
+                    <input type="text" class="price" placeholder="от"> -
+                    <input type="text" class="price" placeholder="до">
+                    <div class="price-range-block">
+                        <span class="price-circle"></span><span class="price-range"></span><span class="price-circle"></span>
+                    </div>
+                </div>
+                <div class="filter-block">
+                    <span class="serach-title">Сортировка</span>
+                    <p><input type="checkbox"/>Наши рекомендации</p>
+                    <p><input type="checkbox"/>По стоимости от низкой</p>
+                    <p><input type="checkbox"/>По стоимости от высокой</p>
+                    <p><input type="checkbox"/>По названию (А - Я)</p>
+                    <p><input type="checkbox"/>По названию (Я - А)</p>
+                    <p><input type="checkbox"/>По популярности</p>
+                    <p><input type="checkbox"/>Новинки</p>
+                    <p><input type="checkbox"/>Акции</p>
+                    <p><input type="checkbox"/>Хиты</p>
+
+                    <span class="serach-title">Вышивка</span>
+                    <p><input type="checkbox"/>Иконы</p>
+                    <p><input type="checkbox"/>Цветы</p>
+                    <p><input type="checkbox"/>Натюрморты</p>
+                    <p><input type="checkbox"/>Подарок за 1 вечер</p>
+                    <p><input type="checkbox"/>Пейзажи</p>
+                    <p><input type="checkbox"/>Животный мир</p>
+                    <p><input type="checkbox"/>Мировая классика</p>
+                    <p><input type="checkbox"/>Ювелирный бисер</p>
+                    <p><input type="checkbox"/>Гороскопы</p>
+                    <p><input type="checkbox"/>Премиум</p>
+
+                    <span class="serach-title">Бисероплетение</span>
+                    <p><input type="checkbox"/>Браслеты и колье</p>
+                    <p><input type="checkbox"/>Брелоки</p>
+                    <p><input type="checkbox"/>Игрушки</p>
+
+                    <span class="serach-title">Аксессуары</span>
+                    <p><input type="checkbox"/>Нитки</p>
+                    <p><input type="checkbox"/>Пяльца</p>
+                    <p><input type="checkbox"/>Иглы</p>
+                    <p><input type="checkbox"/>Подарочная коробка</p>
+
+                </div>
+            </div>
+            </div>
+
+            <div class="card-product-full">
+                <div class="hit-product сard-product">
+                    <div class="img-сard-product">
+                        <img src="/images/home-hit-product/dvoe-na-plyazhe.jpg" alt="Двое на париж">
+                    </div> 
+                    <div class="description-hit-product">
+                        <title>Двое на париж</title>
+                        <p class="price">1900 ₽</p>
+                        <button class="red">Купить</button>
+                    </div>
+                </div>
+                
+                <div class="hit-product сard-product">
+                    <div class="img-сard-product">
+                        <img src="/images/home-hit-product/dvoe-na-plyazhe.jpg" alt="Двое на париж">
+                    </div> 
+                    <div class="description-hit-product">
+                        <title>Двое на париж</title>
+                        <p class="price">1900 ₽</p>
+                        <button class="red">Купить</button>
+                    </div>
+                </div><div class="hit-product сard-product">
+                    <div class="img-сard-product">
+                        <img src="/images/home-hit-product/dvoe-na-plyazhe.jpg" alt="Двое на париж">
+                    </div> 
+                    <div class="description-hit-product">
+                        <title>Двое на париж</title>
+                        <p class="price">1900 ₽</p>
+                        <button class="red">Купить</button>
+                    </div>
+                </div>
+                <div class="hit-product сard-product">
+                    <div class="img-сard-product">
+                        <img src="/images/home-hit-product/dvoe-na-plyazhe.jpg" alt="Двое на париж">
+                    </div> 
+                    <div class="description-hit-product">
+                        <title>Двое на париж</title>
+                        <p class="price">1900 ₽</p>
+                        <button class="red">Купить</button>
+                    </div>
+                </div><div class="hit-product сard-product">
+                    <div class="img-сard-product">
+                        <img src="/images/home-hit-product/dvoe-na-plyazhe.jpg" alt="Двое на париж">
+                    </div> 
+                    <div class="description-hit-product">
+                        <title>Двое на париж</title>
+                        <p class="price">1900 ₽</p>
+                        <button class="red">Купить</button>
+                    </div>
+                </div>
+            <div class="hit-product сard-product">
+                    <div class="img-сard-product">
+                        <img src="/images/home-hit-product/dvoe-na-plyazhe.jpg" alt="Двое на париж">
+                    </div> 
+                    <div class="description-hit-product">
+                        <title>Двое на париж</title>
+                        <p class="price">1900 ₽</p>
+                        <button class="red">Купить</button>
+                    </div>
+                </div><div class="hit-product сard-product">
+                    <div class="img-сard-product">
+                        <img src="/images/home-hit-product/dvoe-na-plyazhe.jpg" alt="Двое на париж">
+                    </div> 
+                    <div class="description-hit-product">
+                        <title>Двое на париж</title>
+                        <p class="price">1900 ₽</p>
+                        <button class="red">Купить</button>
+                    </div>
+                </div><div class="hit-product сard-product">
+                    <div class="img-сard-product">
+                        <img src="/images/home-hit-product/dvoe-na-plyazhe.jpg" alt="Двое на париж">
+                    </div> 
+                    <div class="description-hit-product">
+                        <title>Двое на париж</title>
+                        <p class="price">1900 ₽</p>
+                        <button class="red">Купить</button>
+                    </div>
+                </div><div class="hit-product сard-product">
+                    <div class="img-сard-product">
+                        <img src="/images/home-hit-product/dvoe-na-plyazhe.jpg" alt="Двое на париж">
+                    </div> 
+                    <div class="description-hit-product">
+                        <title>Двое на париж</title>
+                        <p class="price">1900 ₽</p>
+                        <button class="red">Купить</button>
+                    </div>
+                </div><div class="hit-product сard-product">
+                    <div class="img-сard-product">
+                        <img src="/images/home-hit-product/dvoe-na-plyazhe.jpg" alt="Двое на париж">
+                    </div> 
+                    <div class="description-hit-product">
+                        <title>Двое на париж</title>
+                        <p class="price">1900 ₽</p>
+                        <button class="red">Купить</button>
+                    </div>
+                </div><div class="hit-product сard-product">
+                    <div class="img-сard-product">
+                        <img src="/images/home-hit-product/dvoe-na-plyazhe.jpg" alt="Двое на париж">
+                    </div> 
+                    <div class="description-hit-product">
+                        <title>Двое на париж</title>
+                        <p class="price">1900 ₽</p>
+                        <button class="red">Купить</button>
+                    </div>
+                </div><div class="hit-product сard-product">
+                    <div class="img-сard-product">
+                        <img src="/images/home-hit-product/dvoe-na-plyazhe.jpg" alt="Двое на париж">
+                    </div> 
+                    <div class="description-hit-product">
+                        <title>Двое на париж</title>
+                        <p class="price">1900 ₽</p>
+                        <button class="red">Купить</button>
+                    </div>
+                </div></div>
+        </div>
+    </section>
+
+    <section class="prefooter">
+        <h2>Наши контакты</h2>
+        <div class="contact container">
+            <ul>
+                <li class="c-phone">+7 (495) 706-51-61</li>
+                <li class="c-email">office@busina.ru</li>
+                <li class="c-site">www.busina.ru</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="footer container">
+            <div class="footer-logo">
+                <ul>
+                    <li class="footer-logo"><img src="/images/logo.svg" alt="Логотип Радуга Бисера"></li>
+                    <li class="footer-social"><img src="/images/footer/vk.svg" alt="Вконтакте"> <img src="/images/footer/fb.svg" alt="Facebook"> <img src="/images/footer/instagram.svg" alt="Instagram"></li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li>Вышивка</li>
+                    <li>Бисероплетение</li>
+                    <li>Аксессуары</li>
+                </ul>
+                <ul>
+                    <li>Новости</li>
+                    <li>Хиты</li>
+                    <li>Акции</li>
+                </ul>
+                <ul>
+                    <li>О нас</li>
+                    <li>Скидки и доставка</li>
+                    <li>Контакты</li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <ul>
+                    <li><button class="red">Оптовикам</button></li>
+                    <li>+7 (495) 706-51-61</li>
+                    <li>www.busina.ru</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="js/menu-mobile.js"></script>
+
+
+    <script>
+        // тут мы вешаем на кнопку МЕНЮ событие которое при клике на кнопку
+        // добавляет menu-filter некий класс, в данном случае это active
+
+        document.querySelector('button.filter-mobile').addEventListener('click', () => {
+        document.querySelector('.menu-filter').classList.add('active');
+        document.querySelector('.close-filter').classList.add('close-filter-active');
+        })
+        // а тут мы вешаем на кнопку close-filter событие которое пр кликена кнопку
+        // удаляет menu-filter  класс  active
+
+        document.querySelector('.close-filter').addEventListener('click', () => {
+        document.querySelector('.menu-filter').classList.remove('active');
+        document.querySelector('.close-filter').classList.remove('close-filter-active')
+        })
+    </script>
+
+  </body>
+</html>
